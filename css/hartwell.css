@@ -89,8 +89,10 @@ body {
   overflow-x: scroll;
   font-family: "Roboto";
   font-weight: light;
-  margin-left: 5%;
+  margin: 5% 0px 0px 5%;
   box-shadow: 0px 0px 5px #000;
+  clear: right;
+  display: inline-block;
 }
 
 table {
@@ -177,4 +179,9 @@ caption #DNP {
 .contact {
   background-color: #efefef;
   height: 100vh;
+}
+
+iframe {
+  display: block;
+  margin: auto;
 }
