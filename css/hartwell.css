@@ -64,16 +64,89 @@ body {
 
 
                           /* ABOUT */
+  /* LEFT */
+
+.left {
+    width: 50%;
+    height: inherit;
+    overflow: auto;
+    float: left;
+  }
 
 .about {
   background-color: #efefef;
   height: 100vh;
 }
 
-#paraBox {
-  width: 100%;
-  margin: 0px 0px 20px 50px;
+.message {
+  padding: 5%;
 }
+
+.message h1 {
+  font-family: "Roboto";
+  font-size: 3em;
+  margin: 0px;
+}
+
+.message p {
+  line-height: 1.9em;
+  font-size: 1.1em;
+  font-family: "Merriweather";
+}
+
+.message ul {
+  line-height: 1.9em;
+  font-size: 1.1em;
+  font-family: "Merriweather";
+  list-style: none;
+  float: left;
+}
+
+.buttons {
+  float: left;
+  clear: both;
+
+}
+
+#rsvp, #contact {
+  float: left;
+  width: 130px;
+  height: 60px;
+  background-color: rgba(67, 134, 252, .5);
+  border-radius: 5px;
+  box-shadow: 5px 5px 3px #000;
+  margin-left: 15px;
+}
+
+#rsvp a, #contact a {
+  text-decoration: none;
+  color: #000;
+}
+
+#rsvp p, #contact p {
+  style: block;
+  text-align: center;
+}
+
+
+/* RIGHT */
+
+
+.right {
+width: 50%;
+height: inherit;
+float: right;
+overflow: auto;
+}
+
+
+
+iframe {
+display: block;
+margin: auto;
+padding-top: 10%;
+}
+
 
 
                          /* PLAYERS */
@@ -89,10 +162,8 @@ body {
   overflow-x: scroll;
   font-family: "Roboto";
   font-weight: light;
-  margin: 5% 0px 0px 5%;
+  margin-left: 5%;
   box-shadow: 0px 0px 5px #000;
-  clear: right;
-  display: inline-block;
 }
 
 table {
@@ -172,16 +243,3 @@ caption #DNP {
 
 
 /* END TABLE STYLING */
-
-
-                         /* CONTACT */
-
-.contact {
-  background-color: #efefef;
-  height: 100vh;
-}
-
-iframe {
-  display: block;
-  margin: auto;
-}
