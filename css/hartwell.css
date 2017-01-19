@@ -67,16 +67,16 @@ body {
   /* LEFT */
 
 .left {
-    width: 50%;
-	min-width: 665px;
-    height: inherit;
-    overflow: auto;
+  display: inline-block;
+    width: 60%;
+	  min-width: 700px;
     float: left;
   }
 
 .about {
   background-color: rgba(229,229,229,0.5);
-  height: 100vh;
+  overflow: auto;
+  min-height: 100vh;
 }
 
 .message {
@@ -100,7 +100,6 @@ body {
   font-size: 1.1em;
   font-family: "Merriweather";
   list-style-image: url('../images/golf-ball-icon_smol.jpg');
-  float: left;
 }
 
 .message li {
@@ -111,11 +110,10 @@ body {
 
 
 .right {
-width: 50%;
-min-width: 665px;
-height: inherit;
-float: right;
+width: 40%;
+min-width: 475px;
 overflow: auto;
+margin: auto;
 }
 
 iframe {
@@ -130,6 +128,10 @@ padding-top: 7%;
   margin: auto;
 }
 
+.eventInfo {
+  margin-bottom: 7%;
+}
+
 .eventInfo ul {
   line-height: 1.9em;
   font-size: 1.6em;
@@ -137,7 +139,7 @@ padding-top: 7%;
   list-style: none;
   margin: 8% auto;
   padding: 0px;
-}	
+}
 
 .eventInfo li {
 	text-align: center;
@@ -147,13 +149,6 @@ padding-top: 7%;
 	width: 370px;
 	height: 60px;
 	margin: auto;
-}
-
-#rsvp a, #contact a {
-	display: block;
-	width: inherit;
-	height: inherit;
-  
 }
 
 #rsvp a, #contact a {
