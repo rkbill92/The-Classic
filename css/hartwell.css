@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400|Open+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Meie+Script');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700|Monsieur+La+Doulaise');
 
 
-                /*ENTER PAGE*/
+
 body {
-  height: inherit;
+  position: relative;
   margin: 0px auto;
   width: 100%;
-  height: auto;
 }
+
+                        /* WELCOME */
 .welcome {
   background: url("../images/backgroundShaded.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -48,48 +49,323 @@ body {
   padding-top: 4%;
 }
 
-.welcome h3 {
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
+
+                          /* HOME */
+  /* LEFT */
+
+.left {
+    display: inline-block;
+    width: 60%;
+	  min-width: 700px;
+    float: left;
+  }
+
+.home {
+  background-color: rgba(244, 244, 244, .5);
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.message {
+  padding: 5%;
+}
+
+.message h1 {
+  font-family: "Roboto";
+  font-size: 3em;
   margin: 0px;
-  margin-right: 11%;
+}
+
+.message h2 {
+  font-family: "Roboto";
+  font-size: 2.4em;
+  margin: 0px;
+}
+
+.message p {
+  line-height: 1.9em;
+  font-size: 1.1em;
+  font-family: "Merriweather";
+}
+
+.message ul {
+  line-height: 1.9em;
+  font-size: 1.1em;
+  font-family: "Merriweather";
+  list-style-image: url('../images/tee.png');
+}
+
+.message li {
+	padding-bottom: 1em;
+}
+
+/* RIGHT */
+
+
+.right {
+width: 40%;
+min-width: 475px;
+overflow: auto;
+margin: auto;
+}
+
+iframe {
+display: block;
+margin: auto;
+padding-top: 7%;
+}
+
+.buttons {
+  display: block;
+  clear: both;
+  margin: auto;
+}
+
+.eventInfo {
+  margin-bottom: 7%;
+}
+
+.eventInfo ul {
+  line-height: 1.9em;
+  font-size: 1.6em;
+  font-family: "Merriweather";
+  list-style: none;
+  margin: 8% auto;
+  padding: 0px;
+}
+
+.eventInfo li {
+	text-align: center;
+}
+
+#rsvp, #contact {
+	width: 370px;
+	height: 60px;
+	margin: auto;
+}
+
+#rsvp a, #contact a {
+  position: relative;
+  z-index: 1100;
+  display: block;
+  text-decoration: none;
+  color: white;
   text-align: center;
-  font-size: 1.3em;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
-  position:relative;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.4em;
+  line-height: 60px;
+  float: left;
+  width: 160px;
+  height: 60px;
+	background-color: rgba(33, 150, 243, 1);
+  border-radius: 3px;
+  margin: 0px 0px 0px 15px;
+  transition: line-height .2s;
+  box-shadow: 1px 1px 2px #000;
+}
 
+#rsvp a:hover {
+  box-shadow: 1px 1px 5px #000;
+}
+
+#rsvp a:hover span {
+	display: inline;
+}
+
+#rsvp a:active {
+	  box-shadow: 0px 0px 2px;
 }
 
 
+                         /* ARCHIVES */
+.archives {
+  /*background-color: rgba(29, 39, 49, 1);*/
+  position: relative;
+  min-height: 100vh;
+  }
 
+.archBackground {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(242, 230, 214, 1);
+	background-size: cover;
+	opacity: .3;
+  }
 
-                          /* ABOUT */
-
-.about {
-  background-color: #efefef;
-  height: 100vh;
+.archiveHeader {
+	position: relative;
+	background-color: rgba(30, 38, 49, 1);
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, .4);
+	padding-top: 15px;
+  color: #fff;
 }
 
-#paraBox {
-  width: 100%;
-  margin: 0px 0px 20px 50px;
+.archiveHeader h1 {
+	font-family: 'Monsieur La Doulaise', sans-serif;
+	font-weight: normal;
+	font-size: 5em;
+	text-align: center;
+	margin: 0px;
+	z-index: 5;
 }
 
+.links {
+	width: auto;
+	max-width: 90%;
+	margin: auto;
+	text-align: center;
+}
 
-                         /* PLAYERS */
-.players {
-  background-color: rgba(29, 39, 49, 1);
-  height: 90vh;
+.linkBtn {
+	display: inline-block;
+	width: 320px;
+	height: 240px;
+	/*border-radius: 6px;*/
+	margin: 40px 20px;
+	border: solid black 1px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, .6);
+	position: relative;
+}
+
+.linkBtn:last-child {
+	margin-bottom: 100px;
+}
+
+.linkDsc {
+	width: inherit;
+	height: inherit;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgba(255, 255, 255, 0);
+	transition: background-color .2s, color .2s;
+}
+
+.linkDsc:hover {
+		background-color: rgba(0, 0, 0, .7);
+		color: rgba(255, 255, 255, 1);
+}
+
+.linkDsc p {
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 18px;
+	padding: 8px;
+	margin: 0px;
+	text-align: left;
+}
+
+.linkImg {
+	width: 320px;
+	height: 180px;
+}
+
+#manifesto {
+	background: url('../images/Manifesto_Thumb.jpg') center;
+	background-size: cover;
+}
+
+#scores {
+	background: url('../images/Scorecard.jpg') center;
+	background-size: cover;
+}
+
+#photos {
+	background: url('../images/Bill_Banks.jpg') center;
+	background-size: cover;
+}
+
+#lore {
+	background: url('../images/Lore_Thumb.jpg') center;
+	background-size: cover;
+}
+
+.linkBar {
+	width: 320px;
+	height: 60px;
+	background-color: rgba(170, 133, 88, 1);
+	/* border-radius: 0px 0px 5px 5px; */
+}
+
+.linkBar p {
+	line-height: 60px;
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 24px;
+	color: white;
+	margin: 0px 10px;
+	text-align: left;
+}
+
+.linkBtn span {
+	display: inline-block;
+	margin: 0px 20px;
+	bottom: 0px;
+}
+
+.linkBar a {
+	position: relative;
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	float: right;
+	margin: 9px 10px 9px 0px;
+	background-color: white;
+	border-radius: 50%;
+	color: #001ba5;
+	transition: height .3s, width .3s, margin .3s;
+	z-index: 1100;
+}
+
+.linkBar a:hover {
+	width: 48px;
+	height: 48px;
+	margin: 6px 7px 6px 0px;
+}
+
+.linkBar a:active {
+	color: white;
+	background-color: #001ba5;
+}
+
+.linkBar i {
+	line-height: 42px;
+	transition: line-height .3s, font-size .3s;
+	font-size: 24px;
+}
+
+.linkBar a:hover i {
+	line-height: 48px;
+	font-size: 30px;
+}
+
+#footer {
+	position: absolute;
+	width: 100%;
+	background-color: rgba(30, 38, 49, 1);
+	bottom: 0px;
+
+}
+
+#footer p {
+	margin: 0px;
+	line-height: 2em;
+	color: white;
+  text-align: right;
+  margin-right: 3%;
 }
 
 
 /*                  TABLE STYLING                      */
 
 .playerTable {
-  overflow-x: scroll;
+  display: table;
   font-family: "Roboto";
   font-weight: light;
-  margin-left: 5%;
+  margin: auto;
+  margin-top: 4em;
   box-shadow: 0px 0px 5px #000;
 }
 
@@ -171,10 +447,18 @@ caption #DNP {
 
 /* END TABLE STYLING */
 
+/* SCORES PAGE STYLING*/
+.childHeader {
+	width: 100%;
+	background-color: #03A9F4;
+	box-shadow: 0px 3px 2px rgba(0, 0, 0, .4);
+}
 
-                         /* CONTACT */
-
-.contact {
-  background-color: #efefef;
-  height: 100vh;
+.childHeader h1 {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 1.25em;
+	color: white;
+	line-height: 2.5em;
+	margin: 0px 0px 0px 3em;
 }
