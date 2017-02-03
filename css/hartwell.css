@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400|Open+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Meie+Script');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700|Monsieur+La+Doulaise');
 
 
-                /*ENTER PAGE*/
+
 body {
-  height: inherit;
+  position: relative;
   margin: 0px auto;
   width: 100%;
-  height: auto;
 }
+
+                        /* WELCOME */
 .welcome {
   background: url("../images/backgroundShaded.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -48,48 +49,332 @@ body {
   padding-top: 4%;
 }
 
-.welcome h3 {
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
+                          /* HOME */
+  /* LEFT */
+
+.left {
+    display: inline-block;
+    width: 60%;
+	  min-width: 700px;
+    float: left;
+  }
+
+.home {
+  background-color: rgba(244, 244, 244, .5);
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.message {
+  padding: 5%;
+}
+
+.message h1 {
+  font-family: "Roboto";
+  font-size: 3.2em;
   margin: 0px;
-  margin-right: 11%;
-  text-align: center;
-  font-size: 1.3em;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
-  position:relative;
+}
 
+.message h2 {
+  font-family: "Roboto";
+  font-size: 2.4em;
+  margin: 0px;
+}
+
+.message p {
+  line-height: 1.9em;
+  font-size: 1.1em;
+  font-family: "Merriweather";
+}
+
+.message ul {
+  line-height: 1.9em;
+  font-size: 1.1em;
+  font-family: "Merriweather";
+  list-style-image: url('../images/tee.png');
+}
+
+.message li {
+	padding-bottom: 1em;
+}
+
+#commish {
+  text-align: right;
+  padding-right: 5%;
+  font-weight: bold;
+}
+
+/* RIGHT */
+
+
+.right {
+width: 40%;
+min-width: 475px;
+overflow: auto;
+margin: auto;
+}
+
+img {
+display: block;
+margin: auto;
+padding-top: 7%;
+width: 425px;
+height: 325px;
 }
 
 
-
-
-                          /* ABOUT */
-
-.about {
-  background-color: #efefef;
-  height: 100vh;
-}
-
-#paraBox {
+                          /* FIXED ACTION BAR */
+.actionBar {
+  background-color: rgba(55, 55, 55,.9);
+  height: 110px;
+  position: fixed;
+  z-index: 1;
+  display: none;
   width: 100%;
-  margin: 0px 0px 20px 50px;
+  top: 0;
+}
+
+.actionButtons  {
+  position: relative;
+  text-align: center;
+  margin-left: 55%;
+}
+
+.button {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.4em;
+  text-decoration: none;
+  color: #fff;
+  margin: 23px 20px;
+  display: inline-block;
+  background-color: rgba(33, 150, 243, 1);
+  border-radius: 5px;
+  width: 155px;
+  height: 65px;
+  text-align: center;
+  transition-duration: .4s;
+  border: 1px solid rgba(33, 150, 243, 1);
 }
 
 
-                         /* PLAYERS */
-.players {
-  background-color: rgba(29, 39, 49, 1);
-  height: 90vh;
+
+.actionButtons a:hover {
+  background-color: #fff;
+  color: rgba(33, 150, 243, 1);
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+
+/* Styles Contact Dropdown Div */
+
+#contact-drop {
+  position: absolute;
+  display: none;
+  background-color: white;
+  z-index: 2;
+  right: -10px;
+  box-shadow: 1px 1px 5px #000;
+  border: 1px solid black;
+}
+
+/* Display Contant Dropdown Div when hovering on Contact Head Button */
+
+#contact:hover #contact-drop {
+  display: block;
+}
+
+/* Styles both paragraph & anchor elements for contact dropdown */
+
+#contact-drop a, #contact-drop p {
+  display: inline-block;
+  width: 100%;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 40px;
+  color: black;
+  text-decoration: none;
+  background-color: rgba(244, 244, 244, .5);
+  margin: 0px;
+  padding: 0px 10px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+#contact-drop a:hover {
+  background-color: rgba(164, 164, 164, .5);
+  text-decoration: underline;
 }
 
 
-/*                  TABLE STYLING                      */
+                         /* ARCHIVES */
+.archives {
+  background: rgba(245, 245, 245, 1);
+  position: relative;
+  min-height: 100vh;
+  }
+
+.archBackground {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	opacity: .3;
+  }
+
+.archiveHeader {
+	position: relative;
+	background-color: rgba(68, 92, 33, 1);
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, .4);
+	padding-top: 15px;
+  color: #fff;
+  height: 95px;
+}
+
+.archiveHeader h1 {
+	font-family: 'Merriweather', serif;
+	font-weight: normal;
+	font-size: 4.4em;
+	text-align: center;
+	margin: 0px;
+	z-index: 5;
+
+}
+
+.links {
+	width: auto;
+	max-width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+.linkBtn {
+	display: inline-block;
+	width: 320px;
+	height: 240px;
+	/*border-radius: 6px;*/
+	margin: 40px 20px;
+	border: 2px solid black;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
+	position: relative;
+  transition: box-shadow .2s;
+  overflow: hidden;
+}
+
+.linkBtn:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+}
+
+/*
+
+.linkDsc {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgba(255, 255, 255, 0);
+	transition: background-color .2s, color .2s;
+}
+
+.linkDsc:hover {
+		background-color: rgba(0, 0, 0, .7);
+		color: rgba(255, 255, 255, 1);
+}
+
+.linkDsc p {
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 18px;
+	padding: 8px;
+	margin: 0px auto;
+  padding-top: 9%;
+	text-align: center;
+}
+
+*/
+
+.linkImg {
+	height: 75%;
+  width: 100%
+}
+
+.linkBar {
+	width: 100%;
+	height: 80%;
+  border-top: 1px solid black;
+	background-color: rgba(222, 193, 135, 1);
+	border-radius: 0px 0px 5px 5px;
+  transition: box-shadow .2s;
+}
+
+
+.linkBar:hover {
+  box-shadow: 1px 1px 5px #000;
+
+}
+
+.linkBar p {
+	line-height: 60px;
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 24px;
+	color: white;
+	margin: 0px 10px;
+	text-align: left;
+  text-align: center;
+}
+
+
+#manifesto {
+	background: url('../images/documents.png') center;
+	background-repeat: no-repeat;
+}
+
+#scores {
+	background: url('../images/scores.png') center;
+	background-repeat: no-repeat;
+}
+
+#photos {
+	background: url('../images/photos.png') center;
+  background-repeat: no-repeat;
+}
+
+/*
+#lore {
+	background: url('../images/Lore_Thumb.jpg') center;
+	background-size: cover;
+}
+*/
+
+                              /* FOOTER */
+
+#footer {
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	bottom: 0px;
+
+}
+
+#footer p {
+	margin: 0px;
+	line-height: 2em;
+	color: white;
+  text-align: right;
+  margin-right: 3%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*                 SCORES TABLE STYLING                      */
 
 .playerTable {
-  overflow-x: scroll;
+  display: table;
   font-family: "Roboto";
   font-weight: light;
-  margin-left: 5%;
+  margin: auto;
+  margin-top: 4em;
   box-shadow: 0px 0px 5px #000;
 }
 
@@ -153,8 +438,21 @@ td a:hover {
   color: #777;
 }
 
+.best {
+  background-color: rgba(6, 206, 106, 0.9);
+  font-weight: 400;
+}
+
+.bestWinner {
+  background:
+    repeating-linear-gradient(45deg,
+    rgba(255, 224, 73, 0.9) 5px,
+    rgba(6, 206, 106, 0.9) 10px);
+}
+
 caption {
   caption-side: bottom;
+  border-bottom: 1px solid black;
 }
 
 caption #winner {
@@ -169,12 +467,73 @@ caption #DNP {
 }
 
 
-/* END TABLE STYLING */
+/* SCORES PAGE STYLING*/
+
+/* Styles Header for all Auxilliary Pages */
+
+.childHeader {
+	width: 100%;
+	background-color: rgba(68, 92, 33, 1);
+	box-shadow: 0px 3px 2px rgba(0, 0, 0, .4);
+}
+
+.childHeader h1 {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 1.25em;
+	color: white;
+	line-height: 2.5em;
+	margin: 0px 0px 0px 3em;
+}
+
+.childHeader a {
+  text-decoration: none;
+  color: white;
+}
+
+.childHeader a:hover {
+  text-decoration: underline;
+}
 
 
-                         /* CONTACT */
 
-.contact {
-  background-color: #efefef;
-  height: 100vh;
+
+
+
+/*   RSVP FORM PAGE STYLING   */
+
+#rsvpForm {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  padding: 10px;
+}
+
+#rsvpForm input[type=text]{
+  width: 100%;
+  font-size: 1em;
+  padding: 12px 12px;
+  box-sizing: border-box;
+}
+
+#rsvpForm input[type=submit] {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid rgba(33, 150, 243, 1);
+  color: white;
+  background-color: rgba(33, 150, 243, 1);
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 5px;
+  transition: .4s;
+}
+
+#rsvpForm input[type=submit]:hover {
+  color: rgba(33, 150, 243, 1);
+  background-color: #fff;
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+
+#rsvpForm input[type=submit]:active {
+
 }
