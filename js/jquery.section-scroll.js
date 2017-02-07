@@ -8,6 +8,12 @@
  *  Licensed under MIT
  *
  */
+
+ $(document).ready(function () {
+     $('body').sectionScroll();
+ })
+
+
 (function ($) {
     'use strict';
 
